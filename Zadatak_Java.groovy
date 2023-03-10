@@ -18,9 +18,9 @@ int lineCounter = 0
 
 new File("data.csv")?.splitEachLine(",") { fields ->
 
-    first_name = fields[0].getClass() == "String" ? fields[0] : "First name not available"
-    last_name = fields[1].getClass() == "String" ? fields[1] : "Last name not available"
-    birth_date = fields[2] != null && fields[2] != "" ? Date.parseToStringDate(fields[2]).format("yyyy-MM-dd") : "Birth date not available"
+    firstName = fields[0].getClass() == "String" ? fields[0] : "First name not available"
+    lastName = fields[1].getClass() == "String" ? fields[1] : "Last name not available"
+    birthDate = fields[2] != null && fields[2] != "" ? Date.parseToStringDate(fields[2]).format("yyyy-MM-dd") : "Birth date not available"
 
     lineCounter += 1
 
